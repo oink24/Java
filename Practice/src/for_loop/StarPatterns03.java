@@ -14,17 +14,19 @@ package for_loop;
  */
 public class StarPatterns03 {
 	public static void main(String[] args) {
-		for(int i=0 ; i<5 ; i++) {
-			
-			for (int j=0 ; j<i ; j++) {
+		
+		for(int i=0 ; i<5 ; i++) // 줄 개수
+		{
+			for (int j=0 ; j<i ; j++) // 공백 출력
+			{
 				System.out.print(" ");
 			}
 			
-			for (int k=5 ; k>i ; k--) {
+			for (int j=5 ; j>i ; j--) // 별 출력
+			{
 				System.out.print("*");
 			}
 			System.out.println();
-			
 		}
 	}
 }
