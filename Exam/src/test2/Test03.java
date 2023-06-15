@@ -19,9 +19,9 @@ public class Test03 {
 		
 		// 배열의 원소를 역순으로 정렬
 		for (int j=0 ; j<5 ; j++) {
-			int temp = arr[j];
-			arr[j] = arr[9-j];
-			arr[9 - j] = temp;
+			int temp = arr[j]; // 앞부분 원소를 temp에 저장
+			arr[j] = arr[9-j]; // 뒷부분 원소를 앞부분에 넣어주고
+			arr[9 - j] = temp; // temp에 있는 앞부분 원소를 뒷부분에 저장
 		}
 		
 		// 역순으로 정렬된 배열 출력

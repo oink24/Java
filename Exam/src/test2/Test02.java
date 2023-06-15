@@ -13,9 +13,9 @@ public class Test02 {
 		
 		int maxNum = arr[0];
 		
-		for (int i=0 ; i<8 ; i++) {
+		for (int i=0 ; i<8 ; i++) { // 배열의 길이만큼 돌리려고
 			
-			if (maxNum < arr[i])
+			if (maxNum < arr[i]) // 더 큰 수가 나타나면
 				maxNum = arr[i];
 		}
 		System.out.println("배열 arr에서 가장 큰 수 : " + maxNum);
