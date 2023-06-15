@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2023/06/13
  * 이름 : 강나은
- * 내용 : Java 자료형 연습문제
+ * 내용 : Java 조건문 연습문제
  * 
  */
 public class Test05 {
