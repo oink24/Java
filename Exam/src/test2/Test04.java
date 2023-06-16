@@ -35,7 +35,7 @@ public class Test04 {
 		}
 		
 		// 정렬된 배열 출력하기
-		for (int i=0; i<5 ; i++)
-			System.out.print(arr[i] + " ");
+		for (int n : arr) // 배열 반복문
+			System.out.print(n + " ");
 	}
 }

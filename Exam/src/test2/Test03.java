@@ -22,10 +22,11 @@ public class Test03 {
 			int temp = arr[j]; // 앞부분 원소를 temp에 저장
 			arr[j] = arr[9-j]; // 뒷부분 원소를 앞부분에 넣어주고
 			arr[9 - j] = temp; // temp에 있는 앞부분 원소를 뒷부분에 저장
+			// 앞은 맨 앞에서 (0부터), 뒤는 맨 뒤에서부터 (9부터)
 		}
 		
 		// 역순으로 정렬된 배열 출력
-		for (int i=0 ; i<10 ; i++) 
-			System.out.print(arr[i] + ", ");
+		for (int n : arr) // 배열 반복문
+			System.out.print(n + ", ");
 	}
 }

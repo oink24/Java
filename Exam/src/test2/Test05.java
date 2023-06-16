@@ -37,10 +37,10 @@ public class Test05 {
 			
 			int mid = (start + end) / 2; // 중앙값 위치 찾기
 			
-			if (arr[mid] > value) { // 검색하고자 하는 값보다 중앙값이 크면
-				end = mid; // 중앙값 위치의 오른쪽을 버리므로
-			} else if (arr[mid] < value) {
-				start = mid;
+			if (arr[mid] > value) { // 검색하고자 하는 값이 더 작음
+				end = mid - 1; // 중앙값 위치의 오른쪽을 버리므로
+			} else if (arr[mid] < value) { // 검색하고자 하는 값이 더 큼
+				start = mid + 1;
 			} else {
 				loc = mid;
 				state = true;
