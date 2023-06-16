@@ -15,13 +15,13 @@ package for_loop;
 public class StarPatterns09 {
 	public static void main(String[] args) {
 		
-		for (int i=1 ; i<10 ; i+=2) // 줄 개수
+		for (int i=1; i<=5; i++) // 줄 개수
 		{
-			for (int j=0 ; j<=i ; j+=2) // 공백 출력
+			for (int j=0 ; j<i ; j++) // 공백 출력
 			{
 				System.out.print(" ");
 			}
-			for (int j=9 ; j>=i ; j--) // 별 출력
+			for (int j=9 ; j>=i*2-1 ; j--) // 별 출력
 			{
 				System.out.print("*");
 			}
