@@ -16,6 +16,6 @@ public class Truck extends Car {
 	
 	public void show() {
 		super.show();
-		System.out.println(("적재량 : " + this.capacity));
+		System.out.println("적재량 : " + this.capacity);
 	}
 }
