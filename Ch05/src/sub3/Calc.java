@@ -14,6 +14,7 @@ public class Calc {
 	// new를 생성하지 못하도록
 	private Calc() {}
 	
+	
 	public int plus(int x, int y) {
 		return x + y;
 	}
