@@ -12,18 +12,6 @@ package sub9;
  *  
  */
 
-class Tv extends Computer implements Internet {
-
-	@Override
-	public void access() {
-		surf();
-	}
-	
-	public void powerOn() {
-		booting();
-	}
-}
-
 class Computer {
 	
 	public void booting() {
@@ -37,6 +25,18 @@ class Computer {
 
 interface Internet {
 	public void access();
+}
+
+class Tv extends Computer implements Internet {
+
+	@Override
+	public void access() {
+		surf();
+	}
+	
+	public void powerOn() {
+		booting();
+	}
 }
 
 public class InterfaceTset {
