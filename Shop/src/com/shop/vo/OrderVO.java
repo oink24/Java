@@ -3,10 +3,14 @@ package com.shop.vo;
 public class OrderVO {
 
 	private int orderNo;
-	private String oderId;
-	private int oderProduct;
-	private int oderCount;
-	private String oderDate;
+	private String orderId;
+	private int orderProduct;
+	private int orderCount;
+	private String orderDate;
+	
+	// 주문현황 출력을 위한 추가필드
+	private String name;
+	private String prodName;
 	
 	public int getOrderNo() {
 		return orderNo;
@@ -16,30 +20,49 @@ public class OrderVO {
 	}
 	
 	public String getOderId() {
-		return oderId;
+		return orderId;
 	}
 	public void setOderId(String oderId) {
-		this.oderId = oderId;
+		this.orderId = oderId;
 	}
 	
 	public int getOderProduct() {
-		return oderProduct;
+		return orderProduct;
 	}
 	public void setOderProduct(int oderProduct) {
-		this.oderProduct = oderProduct;
+		this.orderProduct = oderProduct;
 	}
 	
 	public int getOderCount() {
-		return oderCount;
+		return orderCount;
 	}
 	public void setOderCount(int oderCount) {
-		this.oderCount = oderCount;
+		this.orderCount = oderCount;
 	}
 	
 	public String getOderDate() {
-		return oderDate;
+		return orderDate;
 	}
 	public void setOderDate(String oderDate) {
-		this.oderDate = oderDate;
+		this.orderDate = oderDate;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getProdName() {
+		return prodName;
+	}
+	public void setProdName(String prodName) {
+		this.prodName = prodName;
+	}
+	
+	@Override
+	public String toString() {
+		return orderNo+"번주문 - "+name+"님, 제품명 : "+prodName+", 수량 : "+orderCount+"개, 주문날짜 : "+orderDate;
 	}
 }
