@@ -1,4 +1,4 @@
-package Ch03.confirm;
+package ch03.confirm;
 
 /*
  * 날짜 : 2023/07/18
