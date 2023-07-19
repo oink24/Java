@@ -11,7 +11,10 @@ import java.util.Calendar;
 public class WeekExample {
 	public static void main(String[] args) {
 		
-		Week today = null; // Week 열거타입 변수 선언
+		// 열거타입도 하나의 데이터타입이므로 변수 선언 후 사용해야 함.
+		// 열거타입은 참조타입이므로 null 대입 가능
+		// Week 열거타입 변수 선언
+		Week today = null; 
 		
 		// 컴퓨터 날짜 및 시간 정보를 가진 Calendar 객체를 얻고 번지를 cal 변수에 대입
 		// Calendar 얻기
@@ -20,7 +23,7 @@ public class WeekExample {
 		// 일(1) ~ 토(7) 까지의 숫자를 얻고 week 변수에 대입
 		int week = cal.get(Calendar.DAY_OF_WEEK);
 		
-		// 숫자를 열거 상수로 변환해서 변수에 대입
+		// 숫자를 열거상수로 변환해서 변수에 대입
 		switch(week)
 		{
 		case 1: today = Week.SUNDAY; break;
